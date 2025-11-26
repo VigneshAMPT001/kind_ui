@@ -1,0 +1,66 @@
+[
+  {
+    "product_url": "https://www.kindsnacks.com/products/healthy-grains-bars/almond-butter-dark-chocolate-bars",
+    "amazon_link": {
+      "title": "Almond Butter Dark Chocolate Bars",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/4fc6914d0ab399cf4d5a66bd7967cc77e6391df0.jpg",
+      "amazon": null
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/healthy-grains-bars/dark-chocolate-chunk-bars",
+    "amazon_link": {
+      "title": "Dark Chocolate Chunk Bars",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/2cbe0275fc522c97e87a9de5da14472da9490ed0.jpg",
+      "amazon": null
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/healthy-grains-bars/milk-chocolate-chunk",
+    "amazon_link": {
+      "title": "Milk Chocolate Chunk",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/77db8996463d9f5a329f2c443af4e6515176a15e.jpg",
+      "amazon": null
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/healthy-grains-bars/oats-honey-toasted-coconut",
+    "amazon_link": {
+      "title": "Oats & Honey with Toasted Coconut",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/3b7282044e1fee1792f28627eb6aaa01719b3328.jpg",
+      "amazon": null
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/healthy-grains-bars/peanut-butter-dark-chocolate",
+    "amazon_link": {
+      "title": "Peanut Butter Dark Chocolate",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/a1045d06da35c64fabe2cda9082571ea879f96ff.jpg",
+      "amazon": null
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/healthy-grains-bars/dark-chocolate-peanut-butter",
+    "amazon_link": {
+      "title": "Dark Chocolate Peanut Butter",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/26259a364ebf11fb58552d681d01f9318508f308.jpg",
+      "amazon": null
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/healthy-grains-bars/salted-caramel",
+    "amazon_link": {
+      "title": "Salted Caramel",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/4beff5dd1116e6f913bbadb976ea0d6fb19dce45.jpg",
+      "amazon": null
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/healthy-grains-bars/vanilla-blueberry",
+    "amazon_link": {
+      "title": "Vanilla Blueberry",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/84350c4da25f4115d4d6eb61c713496ecb21a9af.jpg",
+      "amazon": null
+    }
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "product_url": "https://www.kindsnacks.com/products/dipped-clusters/dark-chocolate-vanilla-cashew",
+    "amazon_link": {
+      "title": "Dark Chocolate Vanilla Cashew",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/7b6341ed0810204d28bcaaefd76426cb3fdcdf58.jpg",
+      "amazon": null
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/dipped-clusters/dark-chocolate-almond-butter",
+    "amazon_link": {
+      "title": "Dark Chocolate Almond Butter",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/78da36c34a586af83ee77d701bca2b0ea2c1e491.jpg",
+      "amazon": null
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/dipped-clusters/dark-chocolate-nuts-berries",
+    "amazon_link": {
+      "title": "Dark Chocolate Nuts & Berries",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/47245381db73d51257fe42fef0b5ed4b872115be.png",
+      "amazon": null
+    }
+  }
+]

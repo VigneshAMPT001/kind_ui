@@ -1,0 +1,101 @@
+[
+  {
+    "category": "ZEROg_Added_Sugar_Granola",
+    "category_display": "Zerog Added Sugar Granola",
+    "source_product_url": "https://www.kindsnacks.com/products/zerog-added-sugar-granola/apple-cinnamon-nut-granola",
+    "product_name": "Zerog Added Sugar Granola",
+    "variants": [
+      {
+        "asin": "B0CH1RTWRN",
+        "variant_name": "Apple Cinnamon Nut Granola",
+        "title": "KIND Zero Added Sugar Keto Granola, Apple Cinnamon Nut, Good Source of Fiber, Gluten Free, Low Sugar, 5g Protein, 1 Count",
+        "price": 7.49,
+        "unit_price": 7.49,
+        "prime": true,
+        "flavor": "Apple Cinnamon Nut Granola",
+        "size": "8 Ounce (Pack of 1)",
+        "variant_dimensions": {
+          "size_name": "8 Ounce (Pack of 1)"
+        },
+        "final_url": "https://www.amazon.com/dp/B0CH1RTWRN?tag=price20729-20&ascsubtag=wtbs_6924267f28ddf262c12c3f45&me=ATVPDKIKX0DER&th=1",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=c383a136-d3a9-4c75-9084-f330f27f630e&v=2.13.15&pmid=146606736&price=7.49&stockStatus=1&widgetType=lightbox&t=5237&postalCode=400099&n=0&tidp=_ga&tid=GA1.1.572299934.1763381658&_=1763382343321"
+      }
+    ],
+    "seller_market": [
+      {
+        "asin": "B0CH1RTWRN",
+        "seller_name": "Amazon.com",
+        "ships_from": "Amazon.com",
+        "is_authorized": true,
+        "price": 7.49,
+        "unit_price": 7.49,
+        "price_currency": "USD",
+        "price_delta_abs": 0,
+        "price_delta_percent": 0,
+        "price_flag": "at_or_below",
+        "prime": true,
+        "rating_stars": null,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0CH1RTWRN",
+        "seller_name": "USTradeEnt",
+        "ships_from": "USTradeEnt",
+        "is_authorized": false,
+        "price": 15.04,
+        "unit_price": 15.04,
+        "price_currency": "USD",
+        "price_delta_abs": 7.549999999999999,
+        "price_delta_percent": 100.80106809078771,
+        "price_flag": "gouging",
+        "prime": null,
+        "rating_stars": 3.0,
+        "rating_count": 9725,
+        "positive_rating_percent": 42.0,
+        "rating_flag": "poor"
+      }
+    ]
+  },
+  {
+    "category": "ZEROg_Added_Sugar_Granola",
+    "category_display": "Zerog Added Sugar Granola",
+    "source_product_url": "https://www.kindsnacks.com/products/zerog-added-sugar-granola/caramel-mocha-nut-granola",
+    "product_name": "Zerog Added Sugar Granola",
+    "variants": [
+      {
+        "asin": "B0CH1PFCZ4",
+        "variant_name": "Caramel Mocha Nut Granola",
+        "title": "KIND Zero Added Sugar Keto Granola, Caramel Mocha Nut, Good Source of Fiber, Gluten Free, Low Sugar, 5g Protein, 1 Count",
+        "price": 5.08,
+        "unit_price": 5.08,
+        "prime": true,
+        "flavor": "Caramel Mocha Nut Granola",
+        "size": "8 Ounce (Pack of 1)",
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0CH1PFCZ4?tag=price20729-20&ascsubtag=wtbs_692426b00ff120ad588e6bc8&me=ATVPDKIKX0DER",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=2eca4bd8-3f9c-42f7-bc06-6a7ba3515500&v=2.13.15&pmid=146607113&price=6.99&stockStatus=1&widgetType=lightbox&t=5170&postalCode=400099&n=0&tidp=_ga&tid=GA1.1.572299934.1763381658&_=1763382352550"
+      }
+    ],
+    "seller_market": [
+      {
+        "asin": "B0CH1PFCZ4",
+        "seller_name": "Amazon.com",
+        "ships_from": "Amazon.com",
+        "is_authorized": true,
+        "price": 5.08,
+        "unit_price": 5.08,
+        "price_currency": "USD",
+        "price_delta_abs": 0,
+        "price_delta_percent": 0,
+        "price_flag": "at_or_below",
+        "prime": true,
+        "rating_stars": null,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      }
+    ]
+  }
+]

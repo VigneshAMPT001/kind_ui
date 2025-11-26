@@ -1,0 +1,544 @@
+{
+    "total_products": 31,
+    "total_categories": 13,
+    "total_skus": 86,
+    "products_per_category": {
+        "Protein_from_Real_Food": 1,
+        "Healthy_Grains_Granola": 3,
+        "Nut_Bars": 8,
+        "Protein_Max": 2,
+        "ZEROg_Added_Sugar_Bars": 1,
+        "ZEROg_Added_Sugar_Granola": 2,
+        "Breakfast_Bars": 3,
+        "Soft_Baked_Granola": 1,
+        "Kids_Bars": 1,
+        "Soft_Baked_Squares_Bars": 2,
+        "Minis_Bars": 1,
+        "Thins_Bars": 4,
+        "All_Snacks": 2
+    },
+    "skus_per_category": {
+        "Protein_from_Real_Food": 2,
+        "Healthy_Grains_Granola": 9,
+        "Nut_Bars": 23,
+        "Protein_Max": 2,
+        "ZEROg_Added_Sugar_Bars": 6,
+        "ZEROg_Added_Sugar_Granola": 3,
+        "Breakfast_Bars": 8,
+        "Soft_Baked_Granola": 6,
+        "Kids_Bars": 2,
+        "Soft_Baked_Squares_Bars": 5,
+        "Minis_Bars": 4,
+        "Thins_Bars": 8,
+        "All_Snacks": 8
+    },
+    "total_unique_sellers": 69,
+    "unique_sellers": [
+        "3M Marketing LLC",
+        "A & N Bros",
+        "AAA_Appliance",
+        "AKS B2C",
+        "AP Wholesale",
+        "Akloos",
+        "Amazon.com",
+        "BestSource OfficeSupplies",
+        "Big Desk Drawer",
+        "BirkenStar",
+        "Boston Mart LLC",
+        "Buck Island Trading",
+        "CostumeBoom",
+        "Epic Safari",
+        "Essex Distribution",
+        "Fast and Precise by Staples",
+        "FoodserviceDirect Inc.",
+        "Friend of Brand",
+        "G r o c e r i a",
+        "GOODBOY ENTERPRISES",
+        "Gourmet Foods & Grocery",
+        "HiTouch Business Services a BU of Staples",
+        "Hugo's Online",
+        "Hurd\u2019s creations",
+        "ILLUMINATASTORE",
+        "Loder Cleaning",
+        "MISAF",
+        "MaKin",
+        "My Two Crowns",
+        "MyOfficeInnovations/Staples, Inc.",
+        "NxtGenn",
+        "OFFICE CHASE CORP.",
+        "ORDER ME INC",
+        "OfficeWorld Store",
+        "On--point",
+        "Online Grocery Outlet",
+        "PLEXSUPPLY.",
+        "SEVENSKY USA INC",
+        "SFL-WHOLESALE",
+        "SIM Supply, Inc.",
+        "SIMBA THREADS",
+        "Saber Unlimited",
+        "Sally Grocers",
+        "Same deals",
+        "San Juan LLC",
+        "Sermersheim Holdings LLC",
+        "ShipCo-Mart",
+        "Shop The King US",
+        "Shoplet",
+        "Skyline Market Solutions",
+        "Supreme Grocer",
+        "TRADE TRANDS",
+        "TecTrove",
+        "The Factory Depot",
+        "The Monster Zone",
+        "Triple Discount",
+        "ULTRA SUPPLY \u2122",
+        "USTradeEnt",
+        "Universo Brands",
+        "Uwiish",
+        "Vitozon",
+        "WeBoxed",
+        "WeBoxedIt",
+        "World Zone Dealz",
+        "ZAKI'S Collection LLC",
+        "iHerb",
+        "ilovetech deals",
+        "mydogsocks",
+        "sas family discount store"
+    ],
+    "unique_sellers_excluding_amazon_and_kind": [
+        "3M Marketing LLC",
+        "A & N Bros",
+        "AAA_Appliance",
+        "AKS B2C",
+        "AP Wholesale",
+        "Akloos",
+        "BestSource OfficeSupplies",
+        "Big Desk Drawer",
+        "BirkenStar",
+        "Boston Mart LLC",
+        "Buck Island Trading",
+        "CostumeBoom",
+        "Epic Safari",
+        "Essex Distribution",
+        "Fast and Precise by Staples",
+        "FoodserviceDirect Inc.",
+        "Friend of Brand",
+        "G r o c e r i a",
+        "GOODBOY ENTERPRISES",
+        "Gourmet Foods & Grocery",
+        "HiTouch Business Services a BU of Staples",
+        "Hugo's Online",
+        "Hurd\u2019s creations",
+        "ILLUMINATASTORE",
+        "Loder Cleaning",
+        "MISAF",
+        "MaKin",
+        "My Two Crowns",
+        "MyOfficeInnovations/Staples, Inc.",
+        "NxtGenn",
+        "OFFICE CHASE CORP.",
+        "ORDER ME INC",
+        "OfficeWorld Store",
+        "On--point",
+        "Online Grocery Outlet",
+        "PLEXSUPPLY.",
+        "SEVENSKY USA INC",
+        "SFL-WHOLESALE",
+        "SIM Supply, Inc.",
+        "SIMBA THREADS",
+        "Saber Unlimited",
+        "Sally Grocers",
+        "Same deals",
+        "San Juan LLC",
+        "Sermersheim Holdings LLC",
+        "ShipCo-Mart",
+        "Shop The King US",
+        "Shoplet",
+        "Skyline Market Solutions",
+        "Supreme Grocer",
+        "TRADE TRANDS",
+        "TecTrove",
+        "The Factory Depot",
+        "The Monster Zone",
+        "Triple Discount",
+        "ULTRA SUPPLY \u2122",
+        "USTradeEnt",
+        "Universo Brands",
+        "Uwiish",
+        "Vitozon",
+        "WeBoxed",
+        "WeBoxedIt",
+        "World Zone Dealz",
+        "ZAKI'S Collection LLC",
+        "iHerb",
+        "ilovetech deals",
+        "mydogsocks",
+        "sas family discount store"
+    ],
+    "total_unique_sellers_excluding_amazon_and_kind": 68,
+    "product_variant_summary": [
+        {
+            "product_name": "Protein",
+            "category": "Protein_from_Real_Food",
+            "variant_count": 2,
+            "unique_sellers_in_product": [
+                "On--point",
+                "Sermersheim Holdings LLC",
+                "My Two Crowns",
+                "Hurd\u2019s creations",
+                "Big Desk Drawer",
+                "Sally Grocers",
+                "3M Marketing LLC",
+                "SFL-WHOLESALE",
+                "PLEXSUPPLY.",
+                "ORDER ME INC",
+                "Boston Mart LLC",
+                "MaKin",
+                "Hugo's Online",
+                "BirkenStar",
+                "Shoplet",
+                "MISAF"
+            ]
+        },
+        {
+            "product_name": "Healthy Grains Clusters",
+            "category": "Healthy_Grains_Granola",
+            "variant_count": 4,
+            "unique_sellers_in_product": [
+                "Loder Cleaning",
+                "USTradeEnt",
+                "ILLUMINATASTORE",
+                "Universo Brands",
+                "AP Wholesale",
+                "Sally Grocers",
+                "FoodserviceDirect Inc.",
+                "Online Grocery Outlet",
+                "G r o c e r i a",
+                "San Juan LLC",
+                "Hurd\u2019s creations",
+                "mydogsocks",
+                "iHerb",
+                "Gourmet Foods & Grocery"
+            ]
+        },
+        {
+            "product_name": "Healthy Grains Clusters",
+            "category": "Healthy_Grains_Granola",
+            "variant_count": 3,
+            "unique_sellers_in_product": [
+                "Essex Distribution",
+                "USTradeEnt",
+                "Friend of Brand",
+                "Sally Grocers",
+                "Online Grocery Outlet",
+                "Uwiish",
+                "Vitozon",
+                "MISAF",
+                "Saber Unlimited",
+                "Gourmet Foods & Grocery"
+            ]
+        },
+        {
+            "product_name": "Healthy Grains Clusters",
+            "category": "Healthy_Grains_Granola",
+            "variant_count": 2,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 9,
+            "unique_sellers_in_product": [
+                "Sermersheim Holdings LLC",
+                "My Two Crowns",
+                "Big Desk Drawer",
+                "BirkenStar",
+                "NxtGenn",
+                "OfficeWorld Store",
+                "Shop The King US",
+                "SEVENSKY USA INC",
+                "3M Marketing LLC",
+                "Fast and Precise by Staples",
+                "GOODBOY ENTERPRISES",
+                "Boston Mart LLC",
+                "San Juan LLC",
+                "MaKin",
+                "The Factory Depot",
+                "Hurd\u2019s creations",
+                "AAA_Appliance",
+                "Shoplet",
+                "MyOfficeInnovations/Staples, Inc.",
+                "Sally Grocers",
+                "sas family discount store",
+                "SIMBA THREADS",
+                "HiTouch Business Services a BU of Staples",
+                "WeBoxed",
+                "Loder Cleaning",
+                "OFFICE CHASE CORP.",
+                "ORDER ME INC",
+                "TRADE TRANDS",
+                "Hugo's Online",
+                "Epic Safari",
+                "MISAF"
+            ]
+        },
+        {
+            "product_name": "Nut Bar Savory",
+            "category": "Nut_Bars",
+            "variant_count": 2,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 5,
+            "unique_sellers_in_product": [
+                "Sermersheim Holdings LLC",
+                "My Two Crowns",
+                "World Zone Dealz",
+                "ORDER ME INC",
+                "MaKin",
+                "BirkenStar",
+                "The Monster Zone",
+                "Shoplet",
+                "Epic Safari",
+                "MISAF"
+            ]
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Nut Bar Savory",
+            "category": "Nut_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 3,
+            "unique_sellers_in_product": [
+                "World Zone Dealz",
+                "Sally Grocers",
+                "ShipCo-Mart",
+                "PLEXSUPPLY.",
+                "ORDER ME INC",
+                "CostumeBoom",
+                "Hugo's Online",
+                "BirkenStar",
+                "Shoplet",
+                "MISAF"
+            ]
+        },
+        {
+            "product_name": "Protein Max",
+            "category": "Protein_Max",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "Buck Island Trading",
+                "SIM Supply, Inc.",
+                "A & N Bros",
+                "Sally Grocers",
+                "Shop The King US",
+                "Same deals",
+                "Fast and Precise by Staples",
+                "PLEXSUPPLY.",
+                "ORDER ME INC",
+                "The Factory Depot"
+            ]
+        },
+        {
+            "product_name": "Protein Max",
+            "category": "Protein_Max",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "Buck Island Trading",
+                "A & N Bros",
+                "PLEXSUPPLY.",
+                "ORDER ME INC",
+                "The Factory Depot"
+            ]
+        },
+        {
+            "product_name": "Zerog Added Sugar Bar",
+            "category": "ZEROg_Added_Sugar_Bars",
+            "variant_count": 6,
+            "unique_sellers_in_product": [
+                "Sally Grocers",
+                "USTradeEnt"
+            ]
+        },
+        {
+            "product_name": "Zerog Added Sugar Granola",
+            "category": "ZEROg_Added_Sugar_Granola",
+            "variant_count": 2,
+            "unique_sellers_in_product": [
+                "USTradeEnt"
+            ]
+        },
+        {
+            "product_name": "Zerog Added Sugar Granola",
+            "category": "ZEROg_Added_Sugar_Granola",
+            "variant_count": 1,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Breakfast Bars",
+            "category": "Breakfast_Bars",
+            "variant_count": 6,
+            "unique_sellers_in_product": [
+                "ZAKI'S Collection LLC",
+                "Fast and Precise by Staples",
+                "Akloos",
+                "SIMBA THREADS",
+                "MaKin",
+                "mydogsocks"
+            ]
+        },
+        {
+            "product_name": "Breakfast Bars",
+            "category": "Breakfast_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Breakfast Bars",
+            "category": "Breakfast_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "Fast and Precise by Staples"
+            ]
+        },
+        {
+            "product_name": "Soft Baked Granola",
+            "category": "Soft_Baked_Granola",
+            "variant_count": 6,
+            "unique_sellers_in_product": [
+                "Sally Grocers",
+                "USTradeEnt",
+                "Universo Brands"
+            ]
+        },
+        {
+            "product_name": "Kids School Friendly",
+            "category": "Kids_Bars",
+            "variant_count": 2,
+            "unique_sellers_in_product": [
+                "ZAKI'S Collection LLC",
+                "Skyline Market Solutions"
+            ]
+        },
+        {
+            "product_name": "Soft Baked Squares",
+            "category": "Soft_Baked_Squares_Bars",
+            "variant_count": 4,
+            "unique_sellers_in_product": [
+                "Sally Grocers",
+                "SIMBA THREADS",
+                "mydogsocks",
+                "ilovetech deals"
+            ]
+        },
+        {
+            "product_name": "Soft Baked Squares",
+            "category": "Soft_Baked_Squares_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "Sally Grocers"
+            ]
+        },
+        {
+            "product_name": "Minis",
+            "category": "Minis_Bars",
+            "variant_count": 4,
+            "unique_sellers_in_product": [
+                "On--point",
+                "Sermersheim Holdings LLC",
+                "My Two Crowns",
+                "ULTRA SUPPLY \u2122",
+                "WeBoxedIt",
+                "Big Desk Drawer",
+                "Sally Grocers",
+                "Hugo's Online",
+                "Akloos",
+                "ORDER ME INC",
+                "MaKin",
+                "BestSource OfficeSupplies",
+                "BirkenStar",
+                "Skyline Market Solutions"
+            ]
+        },
+        {
+            "product_name": "Thins",
+            "category": "Thins_Bars",
+            "variant_count": 4,
+            "unique_sellers_in_product": [
+                "Supreme Grocer",
+                "Sally Grocers",
+                "AKS B2C",
+                "TecTrove",
+                "Boston Mart LLC",
+                "Skyline Market Solutions"
+            ]
+        },
+        {
+            "product_name": "Thins",
+            "category": "Thins_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "Sally Grocers"
+            ]
+        },
+        {
+            "product_name": "Thins",
+            "category": "Thins_Bars",
+            "variant_count": 2,
+            "unique_sellers_in_product": [
+                "Sally Grocers",
+                "Supreme Grocer"
+            ]
+        },
+        {
+            "product_name": "Thins",
+            "category": "Thins_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "Sally Grocers",
+                "Triple Discount",
+                "Akloos",
+                "SIMBA THREADS",
+                "Skyline Market Solutions"
+            ]
+        },
+        {
+            "product_name": "Healthy Grains Energy Bars",
+            "category": "All_Snacks",
+            "variant_count": 5,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Chewy Bar",
+            "category": "All_Snacks",
+            "variant_count": 3,
+            "unique_sellers_in_product": [
+                "Sally Grocers",
+                "3M Marketing LLC"
+            ]
+        }
+    ]
+}
