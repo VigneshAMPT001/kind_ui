@@ -287,7 +287,21 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.title("Product Resellers Analysis")
+col1, col2 = st.columns([0.1, 1])
+with col1:
+    try:
+        st.image("kind.png", width="content")
+    except Exception:
+        pass  # Silently fail if logo not found
+with col2:
+    pass
+
+st.markdown(
+    f"""<h1 style="text-align:center;color:{PRIMARY};margin-bottom:5px;">
+    Product Resellers Analysis
+    </h1>""",
+    unsafe_allow_html=True,
+)
 # st.markdown("Use filters, search, and sorting to refine results.")
 st.markdown("")
 
@@ -579,7 +593,11 @@ with tab_insights:
 
         if not top_df.empty:
             top_df = top_df.sort_values("gouged_listings", ascending=False)
-            st.dataframe(top_df, use_container_width=True)
+
+            st.dataframe(
+                top_df,
+                width="stretch",
+            )
         else:
             st.info("No violators detected in dataset.")
 
@@ -599,7 +617,7 @@ with tab_insights:
                         "avg_overprice_pct",
                     ]
                 ],
-                use_container_width=True,
+                width="stretch",
             )
         else:
             st.info("No category data available.")
@@ -1023,8 +1041,7 @@ with tab_listing:
                     }
                 ]
             )
-            st.dataframe(pd_summary, use_container_width=True)
-
+            st.dataframe(pd_summary, width="stretch")
             matching_items = []
             missing_items = []
 
@@ -1049,7 +1066,7 @@ with tab_listing:
                         }
                     ]
                 )
-                st.dataframe(pd_details, use_container_width=True)
+                st.dataframe(pd_details, width="stretch")
 
                 if p.get("main_seller"):
                     st.markdown("**Main Seller**")
@@ -1069,7 +1086,7 @@ with tab_listing:
                                 }
                             ]
                         ),
-                        use_container_width=True,
+                        width="stretch",
                     )
                 else:
                     st.info("No main seller found for this pack option.")
@@ -1097,8 +1114,7 @@ with tab_listing:
                         }
                         for s in mp_list
                     ]
-                    st.dataframe(pd.DataFrame(sellers_table), use_container_width=True)
-
+                    st.dataframe(pd.DataFrame(sellers_table), width="stretch")
                     st.markdown("**Seller ratings (visual)**")
                     for s in mp_list:
                         stars_html = rating_to_stars(s.get("rating_stars"))
