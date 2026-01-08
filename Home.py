@@ -104,14 +104,7 @@ skus_impacted = meta.get("skus_impacted")
 # ----------------------------------------------------
 # HEADER (UI)
 # ----------------------------------------------------
-col1, col2 = st.columns([0.1, 1])
-with col1:
-    try:
-        st.image("kind.png", width="content")
-    except Exception:
-        pass  # Silently fail if logo not found
-with col2:
-    pass
+
 st.markdown(
     f"""<h1 style="text-align:center;color:{PRIMARY};margin-bottom:5px;">
     KIND Marketplace Dashboard
@@ -174,12 +167,12 @@ with left:
     df_cat.index = df_cat.index + 1
     df_cat.index.name = "S.No"
 
-    st.dataframe(df_cat, width="stretch")
+    st.dataframe(df_cat, use_container_width=True)
 
 
 with right:
     st.subheader("Sellers (Excl Amazon/KIND)")
-    st.dataframe(pd.DataFrame({"seller_name": unique_sellers_list}), width="stretch")
+    st.dataframe(pd.DataFrame({"seller_name": unique_sellers_list}), use_container_width=True)
 
 st.markdown("---")
 
@@ -227,7 +220,7 @@ df_top["price_delta_percent"] = df_top["price_delta_percent"].apply(
     lambda x: f"{x:.1f}%" if x else "-"
 )
 
-st.dataframe(df_top, width="stretch")
+st.dataframe(df_top, use_container_width=True)
 
 st.markdown("---")
 
@@ -268,7 +261,7 @@ with left_col:
         }
     )
 
-    st.dataframe(df_hp_display, width="stretch")
+    st.dataframe(df_hp_display, use_container_width=True)
 
 
 # ---- RIGHT: Seller SKU Impact (Ranked, Amazon Removed) ----
@@ -288,7 +281,7 @@ with right_col:
     # Sort high → low
     df_imp = df_imp.sort_values("sku_count", ascending=False).reset_index(drop=True)
 
-    st.dataframe(df_imp, width="stretch")
+    st.dataframe(df_imp, use_container_width=True)
 
 # st.markdown("---")
 # st.caption(

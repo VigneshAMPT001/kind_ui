@@ -287,14 +287,6 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-col1, col2 = st.columns([0.1, 1])
-with col1:
-    try:
-        st.image("kind.png", width="content")
-    except Exception:
-        pass  # Silently fail if logo not found
-with col2:
-    pass
 
 st.markdown(
     f"""<h1 style="text-align:center;color:{PRIMARY};margin-bottom:5px;">
@@ -500,7 +492,6 @@ def kpi_card(title, value, tooltip, subtitle=""):
     """
 
 
-# part2
 # --------------------------------------------------------
 # Tabs: KPI dashboards vs detailed product explorer
 # --------------------------------------------------------
@@ -518,7 +509,7 @@ with tab_insights:
         kpi_card(
             "Marketplace Health Score",
             marketplace_health_score if marketplace_health_score is not None else "-",
-            "Composite 0–100 risk score.",
+            "Marketplace Health Score= 100 − (0.5×GougingRate%) − (0.4×AvgOverprice%) − (0.1×%BadSellers)",
         ),
         unsafe_allow_html=True,
     )
@@ -596,7 +587,7 @@ with tab_insights:
 
             st.dataframe(
                 top_df,
-                width="stretch",
+                use_container_width=True,
             )
         else:
             st.info("No violators detected in dataset.")
@@ -617,83 +608,12 @@ with tab_insights:
                         "avg_overprice_pct",
                     ]
                 ],
-                width="stretch",
+                use_container_width=True,
             )
         else:
             st.info("No category data available.")
 
-    st.markdown("---")
 
-    # --------------------------------------------------------
-    # BOTTOM: Outlier Risk (extremes & single-worst cases)
-    # --------------------------------------------------------
-    st.markdown("### Outlier Risk (extremes & single-worst cases)")
-    o1, o2, o3 = st.columns(3)
-
-    o1.markdown(
-        kpi_card(
-            "Worst Overprice (%)",
-            f"+{max_overprice_pct:.1f}%",
-            "Maximum single listing % overprice across dataset.",
-        ),
-        unsafe_allow_html=True,
-    )
-
-    o2.markdown(
-        kpi_card(
-            "Max Absolute Markup ($)",
-            (
-                f"${max_abs_markup:.2f}"
-                if isinstance(max_abs_markup, (int, float))
-                else max_abs_markup
-            ),
-            "Max absolute markup (dataset or fallback).",
-        ),
-        unsafe_allow_html=True,
-    )
-
-    def find_worst_listing(flat_products):
-        worst = None
-        for p in flat_products:
-            for s in p.get("seller_market", []):
-                pct = s.get("price_delta_percent")
-                try:
-                    pctv = float(pct) if pct is not None else None
-                except:
-                    pctv = None
-                if pctv is not None:
-                    if worst is None or pctv > worst["pct"]:
-                        worst = {
-                            "pct": pctv,
-                            "seller_name": s.get("seller_name"),
-                            "asin": p.get("asin"),
-                            "product_name": p.get("product_name"),
-                            "seller_price": s.get("price"),
-                            "amazon_price": (
-                                s.get("amazon_price_listing")
-                                if s.get("amazon_price_listing")
-                                else None
-                            ),
-                        }
-        return worst
-
-    worst_listing = find_worst_listing(flat_products)
-    if worst_listing:
-        worst_sub = f"{worst_listing['seller_name']} — ASIN {worst_listing['asin']} (+{worst_listing['pct']:.1f}%)"
-    else:
-        worst_sub = "No per-listing pct found in dataset."
-
-    o3.markdown(
-        kpi_card(
-            "Worst Seller Outlier",
-            worst_listing["seller_name"] if worst_listing else "-",
-            "Seller with the single highest percent overprice listing (if present).",
-            subtitle=worst_sub,
-        ),
-        unsafe_allow_html=True,
-    )
-
-    st.markdown("---")
 
 with tab_listing:
     # --------------------------------------------------------
@@ -738,31 +658,6 @@ with tab_listing:
                 "Seller",
                 ["All Sellers"] + uniq_sellers,
             )
-
-        # # 2nd row: Price Flags (+ room for more filters later)
-        # c4, c5, c6 = st.columns(3)
-
-        # with c4:
-        #     pass
-
-        # with c5:
-        #     # 4. Optional filters
-        #     # rating_filter = st.selectbox(...)
-
-        #     # rating_filter = st.selectbox(
-        #     #     "Filter by rating",
-        #     #     (
-        #     #         "All",
-        #     #         "Excellent (>=90%)",
-        #     #         "Good (75-89%)",
-        #     #         "Mixed (50-74%)",
-        #     #         "Poor (<50%)",
-        #     #     ),
-        #     # )
-        #     pass  # reserved for future filters such as rating, min price, etc.
-
-        # with c6:
-        #     pass  # reserved for seller count slider or advanced options
 
     with st.container():
         col_search, col_sort, col_marketplace_filter = st.columns([1, 1, 1])
@@ -837,9 +732,6 @@ with tab_listing:
         if mp_filter == "Only without marketplace sellers" and sku_has_mp:
             return False
 
-        # if not (seller_min <= len(sku.get("seller_market") or []) <= seller_max):
-        #     return False
-
         if pf_choice:
             flags = [s.get("price_flag") for s in (sku.get("seller_market") or [])]
             if not any(f in pf_choice for f in flags if f):
@@ -858,18 +750,6 @@ with tab_listing:
 
             if sf != main_name and sf not in mp_names:
                 return False
-
-        # if rating_filter != "All":
-        #     match = False
-        #     for s in sku.get("seller_market") or []:
-        #         if get_tier(s.get("positive_rating_percent")) == rating_filter:
-        #             match = True
-        #             break
-        #     ms = sku.get("main_seller")
-        #     if ms and get_tier(ms.get("positive_rating_percent")) == rating_filter:
-        #         match = True
-        #     if not match:
-        #         return False
 
         return True
 
@@ -1041,7 +921,7 @@ with tab_listing:
                     }
                 ]
             )
-            st.dataframe(pd_summary, width="stretch")
+            st.dataframe(pd_summary, use_container_width=True)
             matching_items = []
             missing_items = []
 
@@ -1066,7 +946,7 @@ with tab_listing:
                         }
                     ]
                 )
-                st.dataframe(pd_details, width="stretch")
+                st.dataframe(pd_details, use_container_width=True)
 
                 if p.get("main_seller"):
                     st.markdown("**Main Seller**")
@@ -1086,7 +966,7 @@ with tab_listing:
                                 }
                             ]
                         ),
-                        width="stretch",
+                        use_container_width=True,
                     )
                 else:
                     st.info("No main seller found for this pack option.")
@@ -1094,28 +974,42 @@ with tab_listing:
                 mp_list = p.get("seller_market") or []
                 if mp_list:
                     st.markdown("**Marketplace Sellers**")
-                    sellers_table = [
-                        {
-                            "seller_name": s.get("seller_name"),
-                            "ships_from": s.get("ships_from"),
-                            "authorized": "Yes" if s.get("is_authorized") else "No",
-                            "price": format_price(s.get("price")),
-                            "unit_price": format_price(s.get("unit_price")),
-                            "price_delta": (
-                                f"${float(s['price_delta_abs']):.2f}"
-                                if s.get("price_delta_abs") is not None
-                                else "-"
-                            ),
-                            "price_flag": s.get("price_flag"),
-                            "rating_stars": s.get("rating_stars") or "-",
-                            "rating_count": s.get("rating_count") or "-",
-                            "positive_rating_percent": s.get("positive_rating_percent")
-                            or "-",
-                        }
-                        for s in mp_list
-                    ]
-                    st.dataframe(pd.DataFrame(sellers_table), width="stretch")
+                    amazon_unit_price = (
+                        p.get("main_seller", {}).get("unit_price")
+                        if p.get("main_seller") else None
+                    )
+
+                    sellers_table = []
+
+                    for s in mp_list:
+                        seller_unit_price = s.get("unit_price")
+                        unit_price_delta = (
+                            f"${(float(seller_unit_price) - float(amazon_unit_price)):.2f}"
+                            if seller_unit_price is not None and amazon_unit_price is not None
+                            else "-"
+                        )
+
+                        sellers_table.append(
+                            {
+                                "seller_name": s.get("seller_name"),
+                                "ships_from": s.get("ships_from"),
+                                "authorized": "Yes" if s.get("is_authorized") else "No",
+                                "seller_price": format_price(s.get("price")),
+                                "seller_unit_price": format_price(seller_unit_price),
+                                "amazon_unit_price": format_price(amazon_unit_price),
+                                "unit_price_delta": unit_price_delta,
+                                "price_flag": s.get("price_flag"),
+                                "rating_stars": s.get("rating_stars") or "-",
+                                "rating_count": s.get("rating_count") or "-",
+                                "positive_rating_percent": s.get("positive_rating_percent") or "-",
+                            }
+                        )
+
+                    df_sellers = pd.DataFrame(sellers_table)
+                    st.dataframe(df_sellers, use_container_width=True)
+
                     st.markdown("**Seller ratings (visual)**")
+
                     for s in mp_list:
                         stars_html = rating_to_stars(s.get("rating_stars"))
                         st.markdown(

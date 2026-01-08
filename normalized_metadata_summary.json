@@ -262,10 +262,10 @@
         "triple discount": 1
     },
     "price_flag_summary": {
-        "high price": 27,
+        "high price": 26,
         "price gouging": 158,
-        "slightly high": 29,
-        "fair price": 9
+        "fair price": 16,
+        "slightly high": 29
     },
     "rating_tiers_summary": {
         "poor": 92,
@@ -903,7 +903,7 @@
     ],
     "total_listings": 315,
     "total_gouged_listings": 160,
-    "fair_price_listings": 137,
+    "fair_price_listings": 144,
     "avg_overprice_pct": 59.83707471449662,
     "avg_overprice_abs": 1.32185303514377,
     "max_overprice_pct": 223.23232323232324,
